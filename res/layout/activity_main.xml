@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.sv.cmu.gpspowertester.MainActivity" >
+
+   <TextView
+        android:id="@+id/gps_is_on_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gps_is_on_textview_default" />
+
+    <TextView
+        android:id="@+id/last_gps_update_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gps_is_on_textview"
+        android:layout_below="@+id/gps_is_on_textview"
+        android:text="@string/last_gps_update_textview_default" />
+
+    <TextView
+        android:id="@+id/lat_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_gps_update_textview"
+        android:layout_below="@+id/last_gps_update_textview"
+        android:text="@string/lat_textview_default" />
+
+    <TextView
+        android:id="@+id/lon_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lat_textview"
+        android:layout_below="@+id/lat_textview"
+        android:text="@string/lon_textview_default" />
+
+    <TextView
+        android:id="@+id/battery_level_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lon_textview"
+        android:layout_below="@+id/lon_textview"
+        android:text="@string/battery_level_textview_default" />
+
+    <TextView
+        android:id="@+id/battery_level_updated_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battery_level_textview"
+        android:layout_below="@+id/battery_level_textview"
+        android:text="@string/battery_level_updated_textview_default" />
+
+    <TextView
+        android:id="@+id/battery_level_at_start_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battery_level_updated_textview"
+        android:layout_below="@+id/battery_level_updated_textview"
+        android:text="@string/battery_level_at_start_textview_default" />
+
+    <TextView
+        android:id="@+id/started_at_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battery_level_at_start_textview"
+        android:layout_below="@+id/battery_level_at_start_textview"
+        android:text="@string/started_at_textview_default" />
+
+    <TextView
+        android:id="@+id/total_gps_updates_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/started_at_textview"
+        android:layout_below="@+id/started_at_textview"
+        android:text="@string/total_gps_updates_textview_default" />
+
+    <TextView
+        android:id="@+id/gps_updates_per_second_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_gps_updates_textview"
+        android:layout_below="@+id/total_gps_updates_textview"
+        android:text="@string/gps_updates_per_second_textview_default" />
+
+    <TextView
+        android:id="@+id/discharge_rate_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gps_updates_per_second_textview"
+        android:layout_below="@+id/gps_updates_per_second_textview"
+        android:text="@string/discharge_rate_textview_default" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPS Power Tester</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="gps_is_on_textview_default">GPS is off</string>
+    <string name="last_gps_update_textview_default">Never seen GPS updates</string>
+    <string name="lat_textview_default">Latitude unknown</string>
+    <string name="lon_textview_default">Longitude unknown</string>
+    <string name="battery_level_textview_default">Battery level unknown</string>
+    <string name="battery_level_updated_textview_default">Battery level never updated</string>
+    <string name="battery_level_at_start_textview_default">Battery level at start unknown</string>
+    <string name="started_at_textview_default">Startup time unknown</string>
+    <string name="total_gps_updates_textview_default">No GPS updates</string>
+    <string name="gps_updates_per_second_textview_default">No GPS updates</string>
+    <string name="discharge_rate_textview_default">Discharge rate unknown</string>
+    
+    
+    
+    
+
+</resources>
