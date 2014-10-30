@@ -67,9 +67,10 @@ public class MainActivity extends ActionBarActivity {
 		battery_level_at_start = level / (float)scale;
 
 		BatteryLevelGetter to_run = new BatteryLevelGetter();
-		to_run.interval = 1000; //ms
+		int interval = 500; //ms
+		to_run.interval = interval;
 		Handler handler = new Handler();
-		handler.postDelayed(to_run, 1000);
+		handler.postDelayed(to_run, interval);
 		Log.w("gpspowertester", "Handler posted onStarted");
 		
 		updateUI();
@@ -100,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
 	public void startSGPScanning() {
 		gpslistener = new MyGPSListener();
 		locman = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		locman.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 0, gpslistener);
+		locman.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, gpslistener);
 		is_gps_scanning = true;
 		updateUI();
 	}
